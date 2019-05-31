@@ -1,4 +1,15 @@
 <?php
+/**
+ * The functions file for Child of Twentyseventeen theme.
+ *
+ * @package WordPress
+ * @subpackage child_of_twentyseventeen
+ * @since 1.0
+ * @version 1.0
+ */
+/**
+ * Since 1.0.
+ */
 
 function childtheme_enqueue_styles() {
   wp_enqueue_style( 'parent-style', 
@@ -10,4 +21,10 @@ function childtheme_enqueue_styles() {
     wp_get_theme()->get('Version')
   );
 }
+function elbaron_front_page_sections() {
+  return 6;
+}
+add_filter( 'twentyseventeen_front_page_sections', 'elbaron_front_page_sections' );
 add_action( 'wp_enqueue_scripts', 'childtheme_enqueue_styles' );
+
+include_once( get_stylesheet_directory() . '/inc/social-menu-functions.php' );

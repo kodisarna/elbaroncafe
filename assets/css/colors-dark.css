@@ -443,11 +443,11 @@ body.colors-dark,
 	color: #222;
 }
 
+/* FRONT PAGE SECTIONS */
+
 body.colors-dark,
-.colors-dark .site-content-contain,
-.colors-dark .navigation-top,
-.colors-dark .main-navigation ul {
-	background: none;
+.colors-dark .site-content-contain{
+	background: #1b1612;
 }
 
 .colors-dark .entry-title a,
