@@ -26,5 +26,3 @@ function elbaron_front_page_sections() {
 }
 add_filter( 'twentyseventeen_front_page_sections', 'elbaron_front_page_sections' );
 add_action( 'wp_enqueue_scripts', 'childtheme_enqueue_styles' );
-
-include_once( get_stylesheet_directory() . '/inc/social-menu-functions.php' );
